@@ -1,0 +1,41 @@
+
+body {
+    background-color: Violet;
+    font-family: Arial;
+    font-size: 13px;
+}
+
+h1 {
+    color: DarkBlue;
+    font-family: Arial;
+    font-style: italic;
+    font-size: 20px;
+}
+
+fieldset {
+    border: 1px solid gray;
+    margin: 8px 0;
+    padding: 12px;
+}
+
+legend {
+    color: DarkBlue;
+}
+
+label {
+    color: DarkBlue;
+    display: inline-block;
+    min-width: 115px;
+}
+
+input[type="text"] {
+    width: 130px;
+}
+
+input[type="number"] {
+    width: 40px;
+}
+
+.botones {
+    margin-top: 10px;
+}

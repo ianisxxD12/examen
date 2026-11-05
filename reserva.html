@@ -1,0 +1,75 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Haga su reserva</title>
+
+<link rel="stylesheet" href="css/estilosformularios.css">
+</head>
+
+<body>
+
+<h1>Haga su reserva</h1>
+
+<form action="realizarreserva.php" method="get">
+
+<fieldset>
+<legend>Datos Personales</legend>
+
+<label>Nombre:</label>
+<input type="text" name="nombre" maxlength="30" required>
+<br>
+
+<label>Apellidos:</label>
+<input type="text" name="apellidos" maxlength="50" required>
+<br>
+
+<label>DNI:</label>
+<input type="text" name="dni" required>
+</fieldset>
+
+<fieldset>
+<legend>Datos de su estancia</legend>
+
+<label>Nº de personas:</label>
+<input type="number" name="personas" value="2" min="1" max="6">
+<br>
+
+<label>Fecha de llegada:</label>
+<input type="date" name="llegada">
+<br>
+
+<label>Fecha de salida:</label>
+<input type="date" name="salida">
+<br>
+
+<label>Tipo Habitación:</label>
+
+<select name="habitacion">
+<option>Individual</option>
+<option selected>Doble</option>
+<option>Triple</option>
+</select>
+
+<br>
+
+<label>No fumador:</label>
+<input type="checkbox" name="fumador" checked>
+<br>
+
+<label>Motivo del viaje:</label>
+
+<input type="radio" name="motivo" value="Trabajo">Trabajo
+<input type="radio" name="motivo" value="Ocio" checked>Ocio
+<input type="radio" name="motivo" value="Otros">Otros
+
+</fieldset>
+
+<input type="submit" value="Reservar">
+<input type="reset" value="Reiniciar">
+
+</form>
+
+</body>
+</html>
